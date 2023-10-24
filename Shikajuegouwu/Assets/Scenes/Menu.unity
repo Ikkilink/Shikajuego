@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 257329185}
   - component: {fileID: 257329184}
   - component: {fileID: 257329183}
+  - component: {fileID: 257329186}
   m_Layer: 5
   m_Name: Creditos
   m_TagString: Untagged
@@ -497,7 +498,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 257329184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 257329186}
+        m_TargetAssemblyTypeName: EscenaBttn, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &257329184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +549,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257329181}
   m_CullTransparentMesh: 1
+--- !u!114 &257329186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257329181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6910d8ba82f5f3c4fb9b9c0d47b22cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalDestiny: Credits
 --- !u!1 &305157818
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +574,7 @@ GameObject:
   - component: {fileID: 305157822}
   - component: {fileID: 305157821}
   - component: {fileID: 305157820}
+  - component: {fileID: 305157823}
   m_Layer: 5
   m_Name: Jugar
   m_TagString: Untagged
@@ -619,7 +646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 305157821}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 305157823}
+        m_TargetAssemblyTypeName: EscenaBttn, Assembly-CSharp
+        m_MethodName: CambiarEscena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &305157821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,6 +697,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305157818}
   m_CullTransparentMesh: 1
+--- !u!114 &305157823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305157818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6910d8ba82f5f3c4fb9b9c0d47b22cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalDestiny: Turnos
 --- !u!1 &752194300
 GameObject:
   m_ObjectHideFlags: 0
