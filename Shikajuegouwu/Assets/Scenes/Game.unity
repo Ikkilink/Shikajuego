@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 127803740}
   - component: {fileID: 127803743}
   - component: {fileID: 127803742}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 'InputField '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,8 +416,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -438,8 +438,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 127803739}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -0.4208, z: 0}
-  m_LocalScale: {x: 1.1518781, y: 8.158232, z: 1}
+  m_LocalPosition: {x: 0.0768, y: -0.5606, z: 0}
+  m_LocalScale: {x: 1.585445, y: 9.136101, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 798627859}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 153413494}
   - component: {fileID: 153413496}
   - component: {fileID: 153413495}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,7 +825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270222353}
   - component: {fileID: 270222354}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,8 +840,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270222352}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.29, y: 0.52, z: -0.016600965}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: 2.38, y: 1.29, z: -0.016600965}
+  m_LocalScale: {x: 9.61, y: 6.63, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579595976}
@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 513183375}
   - component: {fileID: 513183377}
   - component: {fileID: 513183376}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 629269710}
   - component: {fileID: 629269712}
   - component: {fileID: 629269711}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: pokemon-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1087,8 +1087,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f72d2f4c8c51aa2459952ed34850068f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1160,7 +1160,7 @@ GameObject:
   - component: {fileID: 651660004}
   - component: {fileID: 651660007}
   - component: {fileID: 651660006}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: InputField 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,8 +1205,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1227,8 +1227,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651660003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9972, y: -0.4208, z: 0}
-  m_LocalScale: {x: 1.1662767, y: 8.158232, z: 1}
+  m_LocalPosition: {x: 1.6421, y: -0.5606, z: 0}
+  m_LocalScale: {x: 1.6052632, y: 9.136101, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 798627859}
@@ -1360,7 +1360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 686854822}
-  m_Layer: 6
+  m_Layer: 1
   m_Name: Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,7 +1478,7 @@ GameObject:
   - component: {fileID: 772931382}
   - component: {fileID: 772931385}
   - component: {fileID: 772931384}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: InputField 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1523,8 +1523,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1545,8 +1545,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772931381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -0.4208, z: 0}
-  m_LocalScale: {x: 1.1518781, y: 8.158232, z: 1}
+  m_LocalPosition: {x: 5.7752, y: -0.5606, z: 0}
+  m_LocalScale: {x: 1.585445, y: 9.136101, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 798627859}
@@ -1601,7 +1601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 776798830}
-  m_Layer: 6
+  m_Layer: 1
   m_Name: Spawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1632,7 +1632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 798627859}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: InputFields
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1647,7 +1647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798627858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.47, y: -0.08440018, z: 0}
+  m_LocalPosition: {x: -2.48, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1738,7 +1738,7 @@ GameObject:
   - component: {fileID: 863976222}
   - component: {fileID: 863976224}
   - component: {fileID: 863976223}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1926,7 +1926,7 @@ GameObject:
   - component: {fileID: 895437632}
   - component: {fileID: 895437631}
   - component: {fileID: 895437630}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2019,8 +2019,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895437629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8999999, y: -0.45000005, z: 0}
-  m_LocalScale: {x: 0.08196, y: 5, z: 6}
+  m_LocalPosition: {x: 4.0465, y: 0.15319997, z: 0.0008}
+  m_LocalScale: {x: 0.1178969, y: 7.192343, z: 8.630812}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2035,7 +2035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 963427015}
-  m_Layer: 6
+  m_Layer: 1
   m_Name: Spawn (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 978536064}
   - component: {fileID: 978536066}
   - component: {fileID: 978536065}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2154,8 +2154,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2317,7 +2317,7 @@ GameObject:
   - component: {fileID: 1079232741}
   - component: {fileID: 1079232744}
   - component: {fileID: 1079232743}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: InputField 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,8 +2362,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2384,8 +2384,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079232740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.99, y: -0.4208, z: 0}
-  m_LocalScale: {x: 1.1518781, y: 8.158232, z: 1}
+  m_LocalPosition: {x: 3.0086, y: -0.5606, z: 0}
+  m_LocalScale: {x: 1.585445, y: 9.136101, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 798627859}
@@ -2442,7 +2442,7 @@ GameObject:
   - component: {fileID: 1176570734}
   - component: {fileID: 1176570736}
   - component: {fileID: 1176570735}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2630,7 +2630,7 @@ GameObject:
   - component: {fileID: 1200678538}
   - component: {fileID: 1200678540}
   - component: {fileID: 1200678539}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2997,7 +2997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358912565}
   - component: {fileID: 1358912566}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3012,8 +3012,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358912564}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4.1, y: 0.52, z: -0.016600965}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: -5.284617, y: 1.29, z: -0.016600965}
+  m_LocalScale: {x: 9.95, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579595976}
@@ -3056,7 +3056,7 @@ GameObject:
   - component: {fileID: 1380426439}
   - component: {fileID: 1380426441}
   - component: {fileID: 1380426440}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3165,7 +3165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1451106943}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celdas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3207,7 +3207,7 @@ GameObject:
   - component: {fileID: 1560620591}
   - component: {fileID: 1560620593}
   - component: {fileID: 1560620592}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3293,8 +3293,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3316,7 +3316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1579595976}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: CollidersExternos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3475,7 +3475,7 @@ GameObject:
   - component: {fileID: 1631351233}
   - component: {fileID: 1631351235}
   - component: {fileID: 1631351234}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 71Njnx8+QoL._AC_UF894,1000_QL80_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3535,8 +3535,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4f043da1497964e4db718f9308e12865, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3607,7 +3607,7 @@ GameObject:
   - component: {fileID: 1639064509}
   - component: {fileID: 1639064508}
   - component: {fileID: 1639064507}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3700,8 +3700,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1639064506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2, y: -0.48, z: 0}
-  m_LocalScale: {x: 0.08196, y: 5, z: 6}
+  m_LocalPosition: {x: -3.29, y: 0.11, z: 0.0008}
+  m_LocalScale: {x: 0.1178969, y: 7.192343, z: 8.630812}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3794,7 +3794,7 @@ GameObject:
   - component: {fileID: 1826954441}
   - component: {fileID: 1826954440}
   - component: {fileID: 1826954442}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Tablero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3861,8 +3861,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826954439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.34339988, y: -0.44840005, z: 0}
-  m_LocalScale: {x: 4.9866, y: 5.0033445, z: 6}
+  m_LocalPosition: {x: 0.3688, y: 0.15539998, z: 0.0008}
+  m_LocalScale: {x: 7.173068, y: 7.1971545, z: 8.630812}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1631351232}
@@ -3968,7 +3968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933521041}
-  m_Layer: 6
+  m_Layer: 1
   m_Name: Spawn (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3999,7 +3999,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1956031612}
-  m_Layer: 6
+  m_Layer: 1
   m_Name: Spawn (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4117,7 +4117,7 @@ GameObject:
   - component: {fileID: 2013793055}
   - component: {fileID: 2013793058}
   - component: {fileID: 2013793057}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: InputField 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4162,8 +4162,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -658106967
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4184,8 +4184,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013793054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.98, y: -0.4208, z: 0}
-  m_LocalScale: {x: 1.1518781, y: 8.158232, z: 1}
+  m_LocalPosition: {x: 4.3713, y: -0.5606, z: 0}
+  m_LocalScale: {x: 1.585445, y: 9.136101, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 798627859}
@@ -4362,7 +4362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052041761}
-  m_Layer: 6
+  m_Layer: 1
   m_Name: Spawn pieza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4477,7 +4477,7 @@ GameObject:
   - component: {fileID: 2083952877}
   - component: {fileID: 2083952879}
   - component: {fileID: 2083952878}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Celda (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4587,7 +4587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2127435282}
   - component: {fileID: 2127435283}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4602,8 +4602,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127435281}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.125383, y: -2.94, z: -0.016600965}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: -2.48, y: -3.36, z: -0.016600965}
+  m_LocalScale: {x: 12.01, y: 5.23, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579595976}
