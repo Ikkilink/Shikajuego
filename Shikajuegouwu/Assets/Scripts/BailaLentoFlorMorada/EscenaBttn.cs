@@ -6,7 +6,7 @@ public class EscenaBttn : MonoBehaviour
     public string finalDestiny;
     public void CambiarEscena()
     {
-        SceneManager.LoadScene("finalDestiny");
+        SceneManager.LoadScene(finalDestiny);
         Debug.Log("Haz cambiado de escena con bttn");
     }
 }
