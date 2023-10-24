@@ -9,9 +9,9 @@ public class Win : MonoBehaviour
     public GameObject tablero;//gameobject del tablero
     public bool player1turn = true;
     public GameObject[] spawnloc;// array de todos los spawns (son emptys)
-    int[,] boardstate;
     public int heightofboard = 5;
     public int lenghtofboard = 5;
+     int[,] boardstate;
     void Start()
     {
         boardstate = new int[lenghtofboard, heightofboard];
@@ -19,11 +19,13 @@ public class Win : MonoBehaviour
     public void SelectColumn(int column)
     {
         Debug.Log("Game Manager Column" + column); //esto es un debug que indica cuando le das click a una columna
-
+        TakeTurn(column);
     }
     public void TakeTurn(int column)
     {
-        if(player1turn)
+        if(updateboard(column))
+        {
+            if(player1turn)
         {
             Instantiate(player1, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
             //esto es un debug que indica cuando le das click a una columna aqui esta el spawn de las piezas
@@ -35,9 +37,13 @@ public class Win : MonoBehaviour
             Instantiate(player2, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
             player1turn = true;
         }
+
+        }
+
+        
         
     }
-    public void updateboard(int column)
+  bool updateboard(int column)
     {
         for (int i = 0; i < heightofboard; i++)
         {
@@ -51,9 +57,12 @@ public class Win : MonoBehaviour
                 {
                     boardstate[column, i] = 2;
                 }
+                Debug.Log("Pieza siendo spawneada en (" + column + " , " + i + ")");
+                return true;
             }
-            Debug.Log("Pieza siendo spawneada en (" + column + " , " + i + ")");
+            
         }
+        return false;
     }
 
 }

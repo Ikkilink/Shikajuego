@@ -10,8 +10,8 @@ public class Inputfields : MonoBehaviour
     void OnMouseDown()
     {
         gm.SelectColumn(column);//manda a llamar debug
-        gm.TakeTurn(column);//manda a llamar el spawn
-        gm.updateboard(column);
+        //gm.TakeTurn(column);//manda a llamar el spawn
+        //gm.updateboard(column);
     }
 
 }
