@@ -8,6 +8,7 @@ public class Win : MonoBehaviour
     public GameObject player2;//gameobject del segundo jugador
     public GameObject tablero;//gameobject del tablero
     public bool player1turn = true;
+  
     public GameObject[] spawnloc;// array de todos los spawns (son emptys)
     public int heightofboard = 5;
     public int lenghtofboard = 5;
@@ -15,7 +16,9 @@ public class Win : MonoBehaviour
     void Start()
     {
         boardstate = new int[lenghtofboard, heightofboard];
+       
     }
+   
     public void SelectColumn(int column)
     {
         Debug.Log("Game Manager Column" + column); //esto es un debug que indica cuando le das click a una columna
