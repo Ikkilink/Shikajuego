@@ -34,6 +34,10 @@ public class Win : MonoBehaviour
             //esto es un debug que indica cuando le das click a una columna aqui esta el spawn de las piezas
             Debug.Log("uwu");
             player1turn = false;
+            if(didwin(1))
+                {
+                    Debug.Log("player 1 won");
+                }
         }
         else
         {
@@ -64,6 +68,22 @@ public class Win : MonoBehaviour
                 return true;
             }
             
+        }
+        return false;
+    }
+
+    bool didwin(int playerNum)
+    {
+       for(int i = 0; i < lenghtofboard; i++)
+        {
+            for (int x = 0; x < lenghtofboard; x++)
+            {
+                if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum)
+                {
+                    return true;
+                }
+
+            }
         }
         return false;
     }
