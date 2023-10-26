@@ -82,9 +82,30 @@ public class Win : MonoBehaviour
                 {
                     return true;
                 }
-
             }
         }
+       for(int i = 0; i<lenghtofboard; i++)
+        {
+            for (int x = 0; x < heightofboard; x++)
+            {
+                if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum)
+                {
+                    return true;
+                }
+            }
+        }
+       ////
+        for (int i = 0; i < lenghtofboard-3; i++)
+        {
+            for (int x = 0; x < heightofboard -3; x++)
+            {
+                if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum)
+                {
+                    return true;
+                }
+            }
+        }
+
         return false;
     }
 
