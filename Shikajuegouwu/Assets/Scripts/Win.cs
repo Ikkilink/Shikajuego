@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Win : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Win : MonoBehaviour
     public GameObject player2;//gameobject del segundo jugador
     public GameObject tablero;//gameobject del tablero
     public bool player1turn = true;
+
+    public Text turnIndicator;
   
     public GameObject[] spawnloc;// array de todos los spawns (son emptys)
     public int heightofboard = 5;
@@ -16,7 +19,7 @@ public class Win : MonoBehaviour
     void Start()
     {
         boardstate = new int[lenghtofboard, heightofboard];
-       
+        UpdateTurnIndicator();
     }
    
     public void SelectColumn(int column)
@@ -28,29 +31,41 @@ public class Win : MonoBehaviour
     {
         if(updateboard(column))
         {
-            if(player1turn)
-        {
-            Instantiate(player1, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
-            //esto es un debug que indica cuando le das click a una columna aqui esta el spawn de las piezas
-            Debug.Log("uwu");
-            player1turn = false;
-            if(didwin(1))
+            if (player1turn)
+            {
+                Instantiate(player1, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
+                //esto es un debug que indica cuando le das click a una columna aqui esta el spawn de las piezas
+                Debug.Log("uwu");
+                player1turn = false;
+                turnIndicator.text = ("Le toca al Jugador 2");
+            
+                if(didwin(1))
                 {
                     Debug.Log("player 1 won");
                 }
-        }
-        else
-        {
-            Instantiate(player2, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
-            player1turn = true;
-        }
+              
+            }
+            else
+            {
+               Instantiate(player2, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
+               player1turn = true;
+                turnIndicator.text = ("Le toca al jugador 1");
+            }
 
+            UpdateTurnIndicator();
         }
 
         
         
     }
-  bool updateboard(int column)
+
+    private void UpdateTurnIndicator()
+    {
+        string playerTurn = player1turn ? "Jugador 1" : "Jugador 2";
+        turnIndicator.text = "Le toca al " + playerTurn;
+    }
+
+    bool updateboard(int column)
     {
         for (int i = 0; i < heightofboard; i++)
         {
