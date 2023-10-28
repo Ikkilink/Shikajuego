@@ -33,15 +33,16 @@ public class Win : MonoBehaviour
         {
             if (player1turn)
             {
+                //El guerrero Jaguar es el PL1 y el Aguila es el PL2
                 Instantiate(player1, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
                 //esto es un debug que indica cuando le das click a una columna aqui esta el spawn de las piezas
                 Debug.Log("uwu");
                 player1turn = false;
-                turnIndicator.text = ("Le toca al Jugador 2");
+                turnIndicator.text = ("Turno del Guerrero Aguila");
             
                 if(didwin(1))
                 {
-                    Debug.Log("player 1 won");
+                    Debug.Log("Guerrero Jaguar Gana");
                 }
               
             }
@@ -49,7 +50,7 @@ public class Win : MonoBehaviour
             {
                Instantiate(player2, spawnloc[column].transform.position, Quaternion.identity, tablero.transform);
                player1turn = true;
-                turnIndicator.text = ("Le toca al jugador 1");
+                turnIndicator.text = ("Turno del Guerrero Jaguar");
             }
 
             UpdateTurnIndicator();
@@ -61,8 +62,8 @@ public class Win : MonoBehaviour
 
     private void UpdateTurnIndicator()
     {
-        string playerTurn = player1turn ? "Jugador 1" : "Jugador 2";
-        turnIndicator.text = "Le toca al " + playerTurn;
+        string playerTurn = player1turn ? "Guerrero Jaguar" : "Guerrero Aguila";
+        turnIndicator.text = "Turno del " + playerTurn;
     }
 
     bool updateboard(int column)
