@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Credits.unity
     guid: 860a29117ddde2747b7ee8f60c620c8b
   - enabled: 1
+    path: Assets/Scenes/ComoJugar.unity
+    guid: cd71f4f69ea93ca4ca06280188b77cf2
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 3453f77a884ac214ebc7e40330cdf286
   - enabled: 1
