@@ -96,7 +96,7 @@ public class Win : MonoBehaviour
         {
             for (int x = 0; x < lenghtofboard; x++)
             {
-                if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum)
+                if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum && boardstate[i + 4, x] == playerNum)
                 {
                     if (playerNum == 1)
                     {
@@ -115,7 +115,7 @@ public class Win : MonoBehaviour
         {
             for (int x = 0; x < heightofboard; x++)
             {
-                if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum)
+                if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum && boardstate[i + 4, x] == playerNum)
                 {
                     if (playerNum == 1)
                     {
@@ -134,7 +134,7 @@ public class Win : MonoBehaviour
         {
             for (int x = 0; x < heightofboard -3; x++)
             {
-                if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum)
+                if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum && boardstate[i + 4, x] == playerNum)
                 {
                     if (playerNum == 1)
                     {
@@ -151,5 +151,4 @@ public class Win : MonoBehaviour
 
         return false;
     }
-
 }
