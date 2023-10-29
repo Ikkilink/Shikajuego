@@ -3252,7 +3252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Se el primero en conecatr 4.
+  m_text: Se el primero en conectar 4.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae30674469af1964b8bd1317cd1c388d, type: 2}
   m_sharedMaterial: {fileID: 5990761908939801222, guid: ae30674469af1964b8bd1317cd1c388d, type: 2}
