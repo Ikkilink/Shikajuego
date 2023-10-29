@@ -1284,7 +1284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6910d8ba82f5f3c4fb9b9c0d47b22cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalDestiny: Turnos
+  finalDestiny: Game
 --- !u!1 &1742774328
 GameObject:
   m_ObjectHideFlags: 0
