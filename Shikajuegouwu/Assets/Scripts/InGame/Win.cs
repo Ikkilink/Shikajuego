@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Win : MonoBehaviour
 {
@@ -90,33 +91,59 @@ public class Win : MonoBehaviour
 
     bool didwin(int playerNum)
     {
+        //Horizontal
        for(int i = 0; i < lenghtofboard; i++)
         {
             for (int x = 0; x < lenghtofboard; x++)
             {
                 if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum)
                 {
+                    if (playerNum == 1)
+                    {
+                        SceneManager.LoadScene("Ganador1");
+                    }
+                    else if (playerNum == 2)
+                    {
+                        SceneManager.LoadScene("Ganador2");
+                    }
                     return true;
                 }
             }
         }
+       //Vertical
        for(int i = 0; i<lenghtofboard; i++)
         {
             for (int x = 0; x < heightofboard; x++)
             {
                 if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum)
                 {
+                    if (playerNum == 1)
+                    {
+                        SceneManager.LoadScene("Ganador1");
+                    }
+                    else if (playerNum == 2)
+                    {
+                        SceneManager.LoadScene("Ganador2");
+                    }
                     return true;
                 }
             }
         }
-       ////
+       //Diagonales
         for (int i = 0; i < lenghtofboard-3; i++)
         {
             for (int x = 0; x < heightofboard -3; x++)
             {
                 if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum)
                 {
+                    if (playerNum == 1)
+                    {
+                        SceneManager.LoadScene("Ganador1");
+                    }
+                    else if (playerNum == 2)
+                    {
+                        SceneManager.LoadScene("Ganador2");
+                    }
                     return true;
                 }
             }
