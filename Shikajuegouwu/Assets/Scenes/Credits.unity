@@ -648,7 +648,7 @@ MonoBehaviour:
   m_fontSizeMax: 50
   m_fontStyle: 32
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SamGtz, Inkkilink, Inztinct, Andre
+  m_text: Inkkilink, Inztinct, Andre
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ae30674469af1964b8bd1317cd1c388d, type: 2}
   m_sharedMaterial: {fileID: 5990761908939801222, guid: ae30674469af1964b8bd1317cd1c388d, type: 2}
@@ -2330,7 +2330,7 @@ MonoBehaviour:
   m_fontSizeMax: 50
   m_fontStyle: 32
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
