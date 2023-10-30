@@ -45,7 +45,11 @@ public class Win : MonoBehaviour
                 {
                     Debug.Log("Guerrero Jaguar Gana");
                 }
-              
+                if (didwin(2))
+                {
+                    Debug.Log("Guerrero Aguila Gana");
+                }
+
             }
             else
             {
@@ -96,7 +100,7 @@ public class Win : MonoBehaviour
         {
             for (int x = 0; x < lenghtofboard; x++)
             {
-                if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum && boardstate[i + 4, x] == playerNum)
+                if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum)
                 {
                     if (playerNum == 1)
                     {
@@ -115,7 +119,7 @@ public class Win : MonoBehaviour
         {
             for (int x = 0; x < heightofboard; x++)
             {
-                if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum && boardstate[i + 4, x] == playerNum)
+                if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum)
                 {
                     if (playerNum == 1)
                     {
@@ -134,7 +138,7 @@ public class Win : MonoBehaviour
         {
             for (int x = 0; x < heightofboard -3; x++)
             {
-                if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum && boardstate[i + 4, x] == playerNum)
+                if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum)
                 {
                     if (playerNum == 1)
                     {
@@ -151,4 +155,22 @@ public class Win : MonoBehaviour
 
         return false;
     }
+
+    public void RestartGame()
+    {
+        // Reinicia todos los valores al estado inicial
+        player1turn = true;
+        turnIndicator.text = "Turno del Guerrero Jaguar";
+        boardstate = new int[lenghtofboard, heightofboard];
+
+        // Elimina todas las fichas del tablero
+        foreach (Transform child in tablero.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Vuelve a actualizar el indicador de turno
+        UpdateTurnIndicator();
+    }
+
 }
