@@ -16,7 +16,8 @@ public class Win : MonoBehaviour
     public GameObject[] spawnloc;// array de todos los spawns (son emptys)
     public int heightofboard = 5;
     public int lenghtofboard = 5;
-     int[,] boardstate;
+    int[,] boardstate;
+    public BoxCollider2D[,] colliders;
     void Start()
     {
         boardstate = new int[lenghtofboard, heightofboard];
@@ -30,8 +31,7 @@ public class Win : MonoBehaviour
     }
     public void TakeTurn(int column)
     {
-        if(updateboard(column))
-        {
+           updateboard(column);
             if (player1turn)
             {
                 //El guerrero Jaguar es el PL1 y el Aguila es el PL2
@@ -41,14 +41,14 @@ public class Win : MonoBehaviour
                 player1turn = false;
                 turnIndicator.text = ("Turno del Guerrero Aguila");
             
-                if(didwin(1))
+                /*if(didwin(1))
                 {
                     Debug.Log("Guerrero Jaguar Gana");
                 }
                 if (didwin(2))
                 {
                     Debug.Log("Guerrero Aguila Gana");
-                }
+                }*/
 
             }
             else
@@ -59,7 +59,7 @@ public class Win : MonoBehaviour
             }
 
             UpdateTurnIndicator();
-        }
+        
 
         
         
@@ -71,7 +71,7 @@ public class Win : MonoBehaviour
         turnIndicator.text = "Turno del " + playerTurn;
     }
 
-    bool updateboard(int column)
+    void updateboard(int column)
     {
         for (int i = 0; i < heightofboard; i++)
         {
@@ -85,76 +85,15 @@ public class Win : MonoBehaviour
                 {
                     boardstate[column, i] = 2;
                 }
-                Debug.Log("Pieza siendo spawneada en (" + column + " , " + i + ")");
-                return true;
+                //Debug.Log("Pieza siendo spawneada en (" + column + " , " + i + ")");
+                
             }
             
         }
-        return false;
+       
     }
 
-    bool didwin(int playerNum)
-    {
-        //Horizontal
-       for(int i = 0; i < lenghtofboard; i++)
-        {
-            for (int x = 0; x < lenghtofboard; x++)
-            {
-                if (boardstate[i, x] == playerNum && boardstate[i + 1, x] == playerNum && boardstate[i+2,x]==playerNum&& boardstate[i+3,x] == playerNum)
-                {
-                    if (playerNum == 1)
-                    {
-                        SceneManager.LoadScene("Ganador1");
-                    }
-                    else if (playerNum == 2)
-                    {
-                        SceneManager.LoadScene("Ganador2");
-                    }
-                    return true;
-                }
-            }
-        }
-       //Vertical
-       for(int i = 0; i<lenghtofboard; i++)
-        {
-            for (int x = 0; x < heightofboard; x++)
-            {
-                if (boardstate[i, x] == playerNum && boardstate[i, x +1] == playerNum && boardstate[i, x+2] == playerNum && boardstate[i,x+3] == playerNum)
-                {
-                    if (playerNum == 1)
-                    {
-                        SceneManager.LoadScene("Ganador1");
-                    }
-                    else if (playerNum == 2)
-                    {
-                        SceneManager.LoadScene("Ganador2");
-                    }
-                    return true;
-                }
-            }
-        }
-       //Diagonales
-        for (int i = 0; i < lenghtofboard-3; i++)
-        {
-            for (int x = 0; x < heightofboard -3; x++)
-            {
-                if (boardstate[i, x] == playerNum && boardstate[i + 1, x + 1] == playerNum && boardstate[i +2, x + 2] == playerNum && boardstate[i+3, x + 3] == playerNum)
-                {
-                    if (playerNum == 1)
-                    {
-                        SceneManager.LoadScene("Ganador1");
-                    }
-                    else if (playerNum == 2)
-                    {
-                        SceneManager.LoadScene("Ganador2");
-                    }
-                    return true;
-                }
-            }
-        }
-
-        return false;
-    }
+   
 
     public void RestartGame()
     {
